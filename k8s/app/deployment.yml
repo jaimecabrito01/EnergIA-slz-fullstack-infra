@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: energia-slz
+  namespace: energia-slz
+  labels:
+    tier: backend
+  annotations:
+    description: "Backend app"
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: energia-slz
+
+  strategy:
+    type: RollingUpdate
+
+  template:
+    metadata:
+      labels:
+        app: energia-slz
+
+    spec:
+      containers:
+        - name: energia-slz
+          image: ghcr.io/eugeancarlos/energia-slz:latest
+
+          ports:
+            - containerPort: 8080      
+    

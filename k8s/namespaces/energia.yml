@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+
+metadata:
+  name: energia-slz
+
+  labels:
+    app: energia-slz
+    environment: development
+    managed-by: kubernetes
