@@ -1,4 +1,5 @@
 # EnergIA-slz-fullstack-infra
+```mermaaid
 flowchart TB
 
     USER[Usuário]
@@ -38,3 +39,5 @@ flowchart TB
     end
 
     ARGO --> ARGO_INTERNAL
+```
+
