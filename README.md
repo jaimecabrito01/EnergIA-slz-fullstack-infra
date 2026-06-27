@@ -1,5 +1,6 @@
 # EnergIA-slz-fullstack-infra
-```mermaaid
+
+```mermaid
 flowchart TB
 
     USER[Usuário]
